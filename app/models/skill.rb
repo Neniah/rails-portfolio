@@ -4,7 +4,6 @@ class Skill < ApplicationRecord
   after_initialize :set_defaults
 
   def set_defaults
-    self.main_image ||= "http://placehold.it/600x400"
-    self.thumb_image ||= "http://placehold.it/350x200"
+    self.badge ||= "http://placehold.it/250x250"
   end
 end
